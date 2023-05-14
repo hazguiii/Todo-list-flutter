@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/homepage.dart';
 import 'package:flutter_application_1/screens/signin.dart';
 
-import '../widgets/reusable_widget.dart';
+import '../widgets/forms.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
@@ -46,12 +46,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   height: 20,
                 ),
                 
-                reusableTextField("Enter Email", Icons.person_outline, false,
+                textField("Enter Email", Icons.person_outline, false,
                     _emailTextController),
                 const SizedBox(
                   height: 20,
                 ),
-                reusableTextField("Enter Password", Icons.lock_outlined, true,
+                textField("Enter Password", Icons.lock_outlined, true,
                     _passwordTextController),
                 const SizedBox(
                   height: 20,

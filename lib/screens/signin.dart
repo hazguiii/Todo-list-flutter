@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/homepage.dart';
 import 'package:flutter_application_1/screens/signup.dart';
-import '../widgets/reusable_widget.dart';
+import '../widgets/forms.dart';
 class SignInScreen extends StatefulWidget {
   const SignInScreen({Key? key}) : super(key: key);
 
@@ -34,12 +34,12 @@ class _SignInScreenState extends State<SignInScreen> {
                 const SizedBox(
                   height: 30,
                 ),
-                reusableTextField("Enter UserName", Icons.person_outline, false,
+                textField("Enter UserName", Icons.person_outline, false,
                     _emailTextController),
                 const SizedBox(
                   height: 20,
                 ),
-                reusableTextField("Enter Password", Icons.lock_outline, true,
+                textField("Enter Password", Icons.lock_outline, true,
                     _passwordTextController),
                 const SizedBox(
                   height: 5,
